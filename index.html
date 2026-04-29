@@ -1,0 +1,217 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Técnico ERP - Odoo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./img/logo_dr.png">
+    </head>
+    <body>
+
+    <header>
+        <div class="header-inner">
+        <div class="header-badge">Manual Técnico</div>
+        <h1>Odoo ERP David Iniesta, Raúl Vázquez</h1>
+        <p class="header-sub">Guía de instalación y configuración de módulos</p>
+        </div>
+    </header>
+
+    <nav class="sidebar">
+        <span class="sidebar-titulo">Índice</span>
+        <ul>
+        <li><a href="#instalacion">1. Instalación del ERP</a></li>
+        <li><a href="#modulo1">2. Creación del Módulo 1</a></li>
+        <li>
+            <a href="#modulo2">3. Creación del Módulo 2</a>
+            <ul>
+            <li><a href="#inventario">3.1 Módulo de Inventario</a></li>
+            <li><a href="#backup">3.2 Backup</a></li>
+            <li><a href="#porque">3.3 ¿Por qué este módulo?</a></li>
+            </ul>
+        </li>
+        </ul>
+    </nav>
+
+    <main class="contenido">
+
+        <!-- SECCIÓN 1: INSTALACIÓN -->
+        <section id="instalacion">
+        <div class="section-header">
+            <span class="num">01</span>
+            <h2>Instalación del ERP</h2>
+        </div>
+        <div class="aviso">
+            <span class="aviso-ico">⚠</span>
+            <p>Esta sección está pendiente de completar. Se añadirá el procedimiento de instalación próximamente.</p>
+        </div>
+        </section>
+
+        <!-- SECCIÓN 2: MÓDULO 1 -->
+        <section id="modulo1">
+        <div class="section-header">
+            <span class="num">02</span>
+            <h2>Creación del Módulo 1</h2>
+        </div>
+        <div class="aviso">
+            <span class="aviso-ico">⚠</span>
+            <p>Esta sección está pendiente de completar. Se añadirá la documentación del Módulo 1 próximamente.</p>
+        </div>
+        </section>
+
+        <!-- SECCIÓN 3: MÓDULO 2 -->
+        <section id="modulo2">
+        <div class="section-header">
+            <span class="num">03</span>
+            <h2>Creación del Módulo 2</h2>
+        </div>
+        <p class="intro-texto">A continuación se detalla el proceso de configuración del módulo de inventario en Odoo, incluyendo el acceso inicial, la adición de productos y la realización de una copia de seguridad.</p>
+
+        <!-- 3.1 MÓDULO INVENTARIO -->
+        <div class="subseccion" id="inventario">
+            <h3>3.1 Módulo de Inventario</h3>
+
+            <div class="paso">
+            <div class="paso-header">
+                <span class="paso-num">Paso 1</span>
+                <p>Una vez tenemos instalado el ERP accedemos a <code>localhost:8069</code>. Dentro del panel de aplicaciones escogemos el módulo que queremos activar. En este caso seleccionamos el módulo de <strong>Inventario</strong>. Al darle a activar, el sistema nos pedirá que iniciemos sesión.</p>
+            </div>
+            <div class="capturas">
+                <div class="cap">
+                <img src="img/modulo_david/cap1.png" alt="Selección del módulo de inventario">
+                <span class="cap-label">Figura 1 — Selección del módulo</span>
+                </div>
+                <div class="cap">
+                <img src="img/modulo_david/cap2.png" alt="Pantalla de inicio de sesión">
+                <span class="cap-label">Figura 2 — Inicio de sesión</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="paso">
+            <div class="paso-header">
+                <span class="paso-num">Paso 2</span>
+                <p>Tras iniciar sesión correctamente, el sistema muestra el panel principal con los módulos disponibles. En nuestro caso aparece el módulo de <strong>Inventario</strong> listo para usar.</p>
+            </div>
+            <div class="capturas">
+                <div class="cap">
+                <img src="img/modulo_david/cap3.png" alt="Panel con el módulo de inventario">
+                <span class="cap-label">Figura 3 — Panel principal con el módulo de inventario</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="paso">
+            <div class="paso-header">
+                <span class="paso-num">Paso 3</span>
+                <p>Una vez dentro del módulo, para añadir productos hacemos clic en el botón <strong>Nuevo</strong> de la esquina superior izquierda. Esto abre el formulario de creación de producto.</p>
+            </div>
+            <div class="capturas">
+                <div class="cap">
+                <img src="img/modulo_david/cap4.png" alt="Botón nuevo para añadir productos">
+                <span class="cap-label">Figura 4 — Acceso al formulario de nuevo producto</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="paso">
+            <div class="paso-header">
+                <span class="paso-num">Paso 4</span>
+                <p>En el formulario de nuevo producto rellenamos los campos necesarios: nombre del producto, cantidad en stock, precio de venta y precio de compra. Una vez introducidos todos los datos guardamos el registro. Podemos repetir este proceso para añadir todos los productos que necesitemos.</p>
+            </div>
+            <div class="capturas">
+                <div class="cap">
+                <img src="img/modulo_david/cap5.png" alt="Formulario de creación de producto">
+                <span class="cap-label">Figura 5 — Formulario de nuevo producto</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="paso">
+            <div class="paso-header">
+                <span class="paso-num">Resultado</span>
+                <p>Con los productos creados y guardados, el módulo de inventario queda configurado. En la siguiente captura se puede ver el resultado final con el listado de productos añadidos.</p>
+            </div>
+            <div class="capturas">
+                <div class="cap">
+                <img src="img/modulo_david/cap6.png" alt="Resultado final del módulo de inventario">
+                <span class="cap-label">Figura 6 — Resultado del módulo de inventario</span>
+                </div>
+            </div>
+            </div>
+
+        </div>
+
+        <!-- 3.2 BACKUP -->
+        <div class="subseccion" id="backup">
+            <h3>3.2 Backup de la Base de Datos</h3>
+
+            <div class="info-box">
+            <p>Realizar copias de seguridad de forma periódica es fundamental para garantizar la integridad de los datos. Odoo incluye un gestor de bases de datos accesible desde el navegador.</p>
+            </div>
+
+            <div class="paso">
+            <div class="paso-header">
+                <span class="paso-num">Paso 1</span>
+                <p>Accedemos a la URL <code>http://localhost:8069/web/database/selector</code> y dentro de la pantalla hacemos clic en <strong>Manage Database</strong>.</p>
+            </div>
+            <div class="capturas">
+                <div class="cap">
+                <img src="img/modulo_david/cap7.png" alt="Selector de base de datos">
+                <span class="cap-label">Figura 7 — Selector de base de datos</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="paso">
+            <div class="paso-header">
+                <span class="paso-num">Paso 2</span>
+                <p>Dentro del gestor de bases de datos hacemos clic en el botón <strong>Backup</strong>. El sistema nos solicita las credenciales de administrador para confirmar la operación.</p>
+            </div>
+            <div class="capturas">
+                <div class="cap">
+                <img src="img/modulo_david/cap8.png" alt="Gestor de bases de datos con botón backup">
+                <span class="cap-label">Figura 8 — Opción de backup en el gestor</span>
+                </div>
+                <div class="cap">
+                <img src="img/modulo_david/cap9.png" alt="Formulario de credenciales para el backup">
+                <span class="cap-label">Figura 9 — Introducción de credenciales</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="paso">
+            <div class="paso-header">
+                <span class="paso-num">Paso 3</span>
+                <p>Una vez introducidas las credenciales correctamente, el sistema genera y descarga el archivo de backup. Con esto el proceso de copia de seguridad queda completado.</p>
+            </div>
+            <div class="capturas">
+                <div class="cap">
+                <img src="img/modulo_david/cap10.png" alt="Backup completado y descargado">
+                <span class="cap-label">Figura 10 — Backup completado</span>
+                </div>
+            </div>
+            </div>
+
+        </div>
+
+        </div>
+
+        <!-- POR QUÉ ESTE MÓDULO -->
+        <div class="subseccion" id="porque">
+            <h3>3.3 ¿Por qué hemos escogido este módulo?</h3>
+            <div class="info-box">
+            <p>He escogido el módulo de inventario porque en una empresa de perfumes es básico controlar el stock. Al final son productos físicos y necesitas saber qué tienes, qué falta y qué se está vendiendo.</p>
+            </div>
+        </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>ASIX1 · David Iniesta &amp; Raul Vázquez · Manual Técnico ERP</p>
+    </footer>
+
+    </body>
+    </html>
