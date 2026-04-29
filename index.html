@@ -20,7 +20,14 @@
         <span class="sidebar-titulo">Índice</span>
         <ul>
         <li><a href="#instalacion">1. Instalación del ERP</a></li>
-        <li><a href="#modulo1">2. Creación del Módulo 1</a></li>
+        <li>
+            <a href="#modulo1">2. Creación del Módulo 1</a>
+            <ul>
+            <li><a href="#empleados">2.1 Módulo de Empleados</a></li>
+            <li><a href="#backup-modulo1">2.2 Backup</a></li>
+            <li><a href="#porque-modulo1">2.3 ¿Por qué este módulo?</a></li>
+            </ul>
+        </li>
         <li>
             <a href="#modulo2">3. Creación del Módulo 2</a>
             <ul>
@@ -145,10 +152,132 @@
             <span class="num">02</span>
             <h2>Creación del Módulo 1</h2>
         </div>
-        <div class="aviso">
-            <span class="aviso-ico">⚠</span>
-            <p>Esta sección está pendiente de completar. Se añadirá la documentación del Módulo 1 próximamente.</p>
+        <p class="intro-texto">A continuación se detalla el proceso de configuración del módulo de Empleados en Odoo, incluyendo la creación de departamentos, empleados, contratos y la realización de una copia de seguridad.</p>
+
+        <div class="subseccion" id="empleados">
+            <h3>2.1 Módulo de Empleados</h3>
+
+            <div class="paso">
+            <div class="paso-header">
+                <span class="paso-num">Paso 1</span>
+                <p>Una vez tenemos instalado el ERP accedemos a <code>localhost:8069</code>. Dentro del panel de aplicaciones buscamos el módulo de <strong>Empleados</strong> y hacemos clic en <strong>Activar</strong>.</p>
+            </div>
+            <div class="capturas">
+                <div class="cap">
+                <img src="img/modulo_raul/cap1.png" alt="Activar módulo de empleados">
+                <span class="cap-label">Figura 1 — Activación del módulo de Empleados</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="paso">
+            <div class="paso-header">
+                <span class="paso-num">Paso 2</span>
+                <p>Con el módulo activo, entramos dentro y nos dirigimos al apartado de <strong>Departamentos</strong>. Hacemos clic en <strong>Nuevo</strong> para crear los departamentos necesarios. En este caso hemos creado tres: <strong>Venta Perfumes</strong>, <strong>Atención al Cliente</strong> y <strong>Marketing</strong>.</p>
+            </div>
+            <div class="capturas">
+                <div class="cap">
+                <img src="img/modulo_raul/cap2.png" alt="Apartado de departamentos">
+                <span class="cap-label">Figura 2 — Apartado de Departamentos</span>
+                </div>
+                <div class="cap">
+                <img src="img/modulo_raul/cap3.png" alt="Departamentos creados">
+                <span class="cap-label">Figura 3 — Departamentos creados</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="paso">
+            <div class="paso-header">
+                <span class="paso-num">Paso 3</span>
+                <p>A continuación accedemos al apartado de <strong>Empleados</strong> y hacemos clic en <strong>Nuevo</strong> para añadir trabajadores. Para cada empleado rellenamos su nombre, email y número de teléfono. En el apartado de trabajo seleccionamos su departamento y puesto. Una vez todo configurado hacemos clic en <strong>Crear usuario</strong>.</p>
+            </div>
+            <div class="capturas">
+                <div class="cap">
+                <img src="img/modulo_raul/cap4.png" alt="Formulario de nuevo empleado">
+                <span class="cap-label">Figura 4 — Formulario de nuevo empleado</span>
+                </div>
+                <div class="cap">
+                <img src="img/modulo_raul/cap5.png" alt="Datos del empleado configurados">
+                <span class="cap-label">Figura 5 — Datos del empleado configurados</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="paso">
+            <div class="paso-header">
+                <span class="paso-num">Paso 4</span>
+                <p>Por último, accedemos al apartado de <strong>Nómina</strong> para completar los datos del contrato de cada empleado: salario, tipo de empleado, tipo de contrato, categoría del pago y horas laborables.</p>
+            </div>
+            <div class="capturas">
+                <div class="cap">
+                <img src="img/modulo_raul/cap6.png" alt="Apartado de nómina">
+                <span class="cap-label">Figura 6 — Apartado de Nómina</span>
+                </div>
+                <div class="cap">
+                <img src="img/modulo_raul/cap7.png" alt="Datos del contrato">
+                <span class="cap-label">Figura 7 — Datos del contrato del empleado</span>
+                </div>
+            </div>
+            </div>
+
         </div>
+
+        <div class="subseccion" id="backup-modulo1">
+            <h3>2.2 Backup de la Base de Datos</h3>
+
+            <div class="info-box">
+            <p>Realizar copias de seguridad de forma periódica es fundamental para garantizar la integridad de los datos. Odoo incluye un gestor de bases de datos accesible desde el navegador.</p>
+            </div>
+
+            <div class="paso">
+            <div class="paso-header">
+                <span class="paso-num">Paso 1</span>
+                <p>Accedemos a la URL <code>http://localhost:8069/web/database/selector</code> y hacemos clic en <strong>Manage Database</strong>.</p>
+            </div>
+            <div class="capturas">
+                <div class="cap">
+                <img src="img/modulo_raul/cap8.png" alt="Selector de base de datos">
+                <span class="cap-label">Figura 8 — Selector de base de datos</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="paso">
+            <div class="paso-header">
+                <span class="paso-num">Paso 2</span>
+                <p>Dentro del gestor hacemos clic en el botón <strong>Backup</strong>. El sistema nos solicitará las credenciales de administrador para confirmar la operación.</p>
+            </div>
+            <div class="capturas">
+                <div class="cap">
+                <img src="img/modulo_raul/cap9.png" alt="Botón backup y credenciales">
+                <span class="cap-label">Figura 9 — Credenciales para el backup</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="paso">
+            <div class="paso-header">
+                <span class="paso-num">Paso 3</span>
+                <p>Una vez introducidas las credenciales correctamente, el sistema genera y descarga el archivo de backup. Con esto el proceso de copia de seguridad queda completado.</p>
+            </div>
+            <div class="capturas">
+                <div class="cap">
+                <img src="img/modulo_raul/cap10.png" alt="Backup completado">
+                <span class="cap-label">Figura 10 — Backup completado</span>
+                </div>
+            </div>
+            </div>
+
+        </div>
+
+        <div class="subseccion" id="porque-modulo1">
+            <h3>2.3 ¿Por qué hemos escogido este módulo?</h3>
+            <div class="info-box">
+            <p>Porque una tienda de perfumes necesita gestionar a sus vendedores: contratos, salarios y horarios. Al tenerlo integrado en el mismo ERP que el inventario, puedes ver directamente qué vende cada empleado y cuánto te cuesta, sin usar programas externos.</p>
+            </div>
+        </div>
+
         </section>
 
         <!-- SECCIÓN 3: MÓDULO 2 -->
@@ -302,7 +431,7 @@
     </main>
 
     <footer>
-        <p>ASIX1 · David Iniesta &amp; Raul Vázquez · Manual Técnico ERP</p>
+        <p>ASIX1 · David Iniesta y Raul Vázquez · Manual Técnico ERP</p>
     </footer>
 
     </body>
