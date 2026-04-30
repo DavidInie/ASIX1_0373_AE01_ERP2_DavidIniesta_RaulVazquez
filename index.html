@@ -36,6 +36,12 @@
             <li><a href="#porque">3.3 ¿Por qué este módulo?</a></li>
             </ul>
         </li>
+        <li>
+            <a href="#restaurar">4. Restaurar BD del Compañero</a>
+            <ul>
+            <li><a href="#resultados">4.1 Resultados Finales</a></li>
+            </ul>
+        </li>
         </ul>
     </nav>
 
@@ -47,7 +53,7 @@
             <span class="num">01</span>
             <h2>Instalación del ERP</h2>
         </div>
-        <p class="intro-texto">A continuación se detalla el proceso de instalación de Odoo en Windows, desde la descarga del instalador hasta la configuración inicial de la base de datos.</p>
+        <p class="intro-texto">A continuación se muestra el proceso de instalación de Odoo en Windows, desde la descarga del instalador hasta la configuración de la base de datos.</p>
 
         <div class="paso">
             <div class="paso-header">
@@ -152,7 +158,7 @@
             <span class="num">02</span>
             <h2>Creación del Módulo 1</h2>
         </div>
-        <p class="intro-texto">A continuación se detalla el proceso de configuración del módulo de Empleados en Odoo, incluyendo la creación de departamentos, empleados, contratos y la realización de una copia de seguridad.</p>
+        <p class="intro-texto">A continuación se muestra el proceso de configuración del módulo de Empleados en Odoo, incluyendo la creación de departamentos, empleados, contratos y la realización de una copia de seguridad.</p>
 
         <div class="subseccion" id="empleados">
             <h3>2.1 Módulo de Empleados</h3>
@@ -286,9 +292,8 @@
             <span class="num">03</span>
             <h2>Creación del Módulo 2</h2>
         </div>
-        <p class="intro-texto">A continuación se detalla el proceso de configuración del módulo de inventario en Odoo, incluyendo el acceso inicial, la adición de productos y la realización de una copia de seguridad.</p>
+        <p class="intro-texto">A continuación se muestra el proceso de configuración del módulo de inventario en Odoo, incluyendo el acceso inicial, la adición de productos y la realización de una copia de seguridad.</p>
 
-        <!-- 3.1 MÓDULO INVENTARIO -->
         <div class="subseccion" id="inventario">
             <h3>3.1 Módulo de Inventario</h3>
 
@@ -363,7 +368,6 @@
 
         </div>
 
-        <!-- 3.2 BACKUP -->
         <div class="subseccion" id="backup">
             <h3>3.2 Backup de la Base de Datos</h3>
 
@@ -416,9 +420,6 @@
 
         </div>
 
-        </div>
-
-        <!-- POR QUÉ ESTE MÓDULO -->
         <div class="subseccion" id="porque">
             <h3>3.3 ¿Por qué hemos escogido este módulo?</h3>
             <div class="info-box">
@@ -428,10 +429,63 @@
 
         </section>
 
+        <!-- SECCIÓN 4: RESTAURAR BACKUP -->
+        <section id="restaurar">
+        <div class="section-header">
+            <span class="num">04</span>
+            <h2>Restaurar la Base de Datos del Compañero</h2>
+        </div>
+        <p class="intro-texto">Una vez cada uno tiene su backup, el siguiente paso es restaurar la base de datos del compañero en nuestra propia máquina. Así tenemos ambas bases de datos en el mismo entorno Odoo.</p>
+
+        <div class="paso">
+            <div class="paso-header">
+            <span class="paso-num">Paso 1</span>
+            <p>Accedemos a <code>http://localhost:8069/web/database</code>. En esta pantalla veremos nuestra base de datos y encontraremos el botón <strong>Restore Database</strong>. Hacemos clic en él para importar la base de datos del compañero.</p>
+            </div>
+            <div class="capturas">
+            <div class="cap">
+                <img src="img/backup/cap1.png" alt="Pantalla de gestión con opción Restore">
+                <span class="cap-label">Figura 1 — Pantalla de restauración de base de datos</span>
+            </div>
+            </div>
+        </div>
+
+        <div class="paso">
+            <div class="paso-header">
+            <span class="paso-num">Paso 2</span>
+            <p>En el formulario de restauración introducimos nuestra contraseña de administrador, seleccionamos el archivo <strong>.zip</strong> del backup del compañero y escribimos el nombre que queremos darle a esa base de datos. Una vez completado hacemos clic en continuar y la base de datos quedará importada.</p>
+            </div>
+            <div class="capturas">
+            <div class="cap">
+                <img src="img/backup/cap2.png" alt="Formulario de restauración con contraseña y archivo zip">
+                <span class="cap-label">Figura 2 — Formulario de restauración</span>
+            </div>
+            </div>
+        </div>
+
+        <div class="subseccion" id="resultados">
+            <h3>4.1 Resultados Finales</h3>
+            <div class="info-box">
+            <p>Con la restauración completada, cada uno tiene en su Odoo las dos bases de datos: la propia y la del compañero. A continuación se muestran los resultados finales de cada instalación.</p>
+            </div>
+            <div class="capturas">
+            <div class="cap">
+                <img src="img/backup/cap3.png" alt="Resultado final David Iniesta">
+                <span class="cap-label">Resultado final — David Iniesta</span>
+            </div>
+            <div class="cap">
+                <img src="img/backup/cap4.png" alt="Resultado final Raul Vázquez">
+                <span class="cap-label">Resultado final — Raul Vázquez</span>
+            </div>
+            </div>
+        </div>
+
+        </section>
+
     </main>
 
     <footer>
-        <p>ASIX1 · David Iniesta y Raul Vázquez · Manual Técnico ERP</p>
+        <p>ASIX1 · David Iniesta &amp; Raul Vázquez · Manual Técnico ERP</p>
     </footer>
 
     </body>
